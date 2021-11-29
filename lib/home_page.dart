@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animations_and_testing/simple_animations/color_changing_button.dart';
 import 'package:flutter_animations_and_testing/simple_animations/color_changing_diagonal_button.dart';
 import 'package:flutter_animations_and_testing/simple_animations/color_changing_ltr_button.dart';
+import 'package:flutter_animations_and_testing/simple_animations/slide_tween.dart';
 import 'package:flutter_animations_and_testing/simple_animations/typing_text.dart';
+import 'package:flutter_animations_and_testing/simple_animations/zoom_out_tween.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -60,6 +62,27 @@ class HomePage extends StatelessWidget {
               child: ListTile(
                 title: Text("Typing Text"),
                 subtitle: Text("Text seems to be getting typed on load."),
+              ),
+            ),
+            InkWell(
+              onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (_) => SlideTween(title: "Slide Tween"))),
+              child: ListTile(
+                title: Text("Slide Tween"),
+                subtitle: Text("Tap on the container to make it slide."),
+              ),
+            ),
+            InkWell(
+              onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (_) => ZoomOutTween(title: "Zoom Out Tween"))),
+              child: ListTile(
+                title: Text("Slide Tween"),
+                subtitle: Text(
+                    "Tap on the container to make it fade away while increasing size."),
               ),
             ),
           ],
