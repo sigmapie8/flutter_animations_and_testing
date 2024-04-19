@@ -26,6 +26,7 @@ class HomePage extends StatelessWidget {
                           ColorChangingButton(title: "Color Changing Button"))),
               child: ListTile(
                 title: Text("Color changing button"),
+                trailing: Icon(Icons.chevron_right),
                 subtitle:
                     Text("A button that changes color when it is pushed."),
               ),
@@ -37,6 +38,7 @@ class HomePage extends StatelessWidget {
                       builder: (_) => ColorChangingLTRButton(
                           title: "Color Changing Left to Right Button"))),
               child: ListTile(
+                trailing: Icon(Icons.chevron_right),
                 title: Text("Color changing left to right button"),
                 subtitle: Text(
                     "A button that changes color left to right when it is pushed."),
@@ -50,6 +52,7 @@ class HomePage extends StatelessWidget {
                           title: "Color Changing Diagonal Button"))),
               child: ListTile(
                 title: Text("Color changing diagonal button"),
+                trailing: Icon(Icons.chevron_right),
                 subtitle: Text(
                     "A button that changes color left top to right bottom when it is pushed."),
               ),
@@ -61,6 +64,7 @@ class HomePage extends StatelessWidget {
                       builder: (_) => TypingText(title: "Typing Text"))),
               child: ListTile(
                 title: Text("Typing Text"),
+                trailing: Icon(Icons.chevron_right),
                 subtitle: Text("Text seems to be getting typed on load."),
               ),
             ),
@@ -71,6 +75,7 @@ class HomePage extends StatelessWidget {
                       builder: (_) => SlideTween(title: "Slide Tween"))),
               child: ListTile(
                 title: Text("Slide Tween"),
+                trailing: Icon(Icons.chevron_right),
                 subtitle: Text("Tap on the container to make it slide."),
               ),
             ),
@@ -81,6 +86,7 @@ class HomePage extends StatelessWidget {
                       builder: (_) => ZoomOutTween(title: "Zoom Out Tween"))),
               child: ListTile(
                 title: Text("Slide Tween"),
+                trailing: Icon(Icons.chevron_right),
                 subtitle: Text(
                     "Tap on the container to make it fade away while increasing size."),
               ),
